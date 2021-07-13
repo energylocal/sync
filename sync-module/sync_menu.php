@@ -1,6 +1,6 @@
 <?php
 global $session;
-if ($session["write"]) {
+if ($session["write"] && $session["admin"]) {
     $menu["setup"]["l2"]['sync'] = array(
         "name"=>_("Sync"),
         "href"=>"sync",
